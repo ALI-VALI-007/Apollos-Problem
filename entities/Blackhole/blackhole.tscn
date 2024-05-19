@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfkmu7us2tchm"]
+
+[ext_resource type="Texture2D" uid="uid://bo88iiui2w2up" path="res://entities/Blackhole/Blackhole.png" id="1_y6fr3"]
+[ext_resource type="PackedScene" uid="uid://2hlquvfwmpoc" path="res://entities/Interact.tscn" id="2_u7eh7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s3jil"]
+size = Vector2(14, 15)
+
+[node name="Blackhole" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(0, -1.5)
+scale = Vector2(1, 1.04688)
+texture = ExtResource("1_y6fr3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_s3jil")
+one_way_collision_margin = 0.0
+
+[node name="InteractArea" parent="." instance=ExtResource("2_u7eh7")]
+scale = Vector2(4.53706, -4.52899)
+interact_val = "1"
+interact_label = "IN BlackHole"
+interact_type = "black_hole"

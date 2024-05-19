@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c55hmc07vdhxj"]
+
+[ext_resource type="Texture2D" uid="uid://cwfnydy0m4whc" path="res://entities/Player/Flashlight.png" id="1_y0iy0"]
+
+[node name="Flashlight" type="Node2D"]
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+texture = ExtResource("1_y0iy0")
+texture_scale = 2.5

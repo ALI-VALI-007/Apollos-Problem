@@ -1,0 +1,621 @@
+[gd_scene load_steps=8 format=3 uid="uid://dut86nsaqww70"]
+
+[ext_resource type="PackedScene" uid="uid://ben4cmrvpcyoq" path="res://Background.tscn" id="1_wmg63"]
+[ext_resource type="PackedScene" uid="uid://dievuqugnptan" path="res://buildings/floor.tscn" id="2_dlhbi"]
+[ext_resource type="PackedScene" uid="uid://1vp41yvkonir" path="res://buildings/Wall/Wall.tscn" id="2_rsjde"]
+[ext_resource type="PackedScene" uid="uid://dfkmu7us2tchm" path="res://entities/Blackhole/blackhole.tscn" id="3_gh6sr"]
+[ext_resource type="PackedScene" uid="uid://cemlas2qnqjoe" path="res://buildings/O2Gen/O2Gen.tscn" id="4_clok6"]
+[ext_resource type="PackedScene" uid="uid://c800p0d38hstp" path="res://buildings/EscapeHatch/EscapeHatch.tscn" id="5_ojxg3"]
+[ext_resource type="PackedScene" uid="uid://dua66d2aoieh4" path="res://entities/Player/player.tscn" id="6_avthb"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_wmg63")]
+
+[node name="Darkness" type="CanvasModulate" parent="."]
+color = Color(0.0923971, 0.0923971, 0.0923971, 1)
+
+[node name="Walls" type="Node2D" parent="."]
+position = Vector2(-1, 0)
+
+[node name="Wall" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(104, -25)
+scale = Vector2(2.2, 2.2)
+
+[node name="Wall2" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(298, -26)
+scale = Vector2(2.2, 2.2)
+
+[node name="Wall3" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(93, 34)
+scale = Vector2(2, 2)
+
+[node name="Wall4" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(281, 37)
+scale = Vector2(2.2, 2.2)
+
+[node name="Wall5" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(-11, 5)
+rotation = 1.5708
+
+[node name="Wall6" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(425, 52)
+rotation = 1.5708
+scale = Vector2(2, 2)
+
+[node name="Wall7" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(370, 154)
+rotation = 1.5708
+scale = Vector2(2, 2)
+
+[node name="Wall8" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(370, 228)
+rotation = 1.5708
+scale = Vector2(2, 2)
+
+[node name="Wall9" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(428, 144)
+rotation = 1.5708
+scale = Vector2(2, 2)
+
+[node name="Wall10" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(515, 222)
+scale = Vector2(2.2, 2.2)
+
+[node name="Wall11" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(380, 340)
+scale = Vector2(2.2, 2.2)
+
+[node name="Wall12" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(1042, 485)
+scale = Vector2(2.2, 2.2)
+
+[node name="Wall13" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(663, 719)
+scale = Vector2(2.2, 2.2)
+
+[node name="Wall14" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(868, 720)
+scale = Vector2(2.2, 2.2)
+
+[node name="Wall15" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(573, 343)
+rotation = 1.5708
+scale = Vector2(2, 2)
+
+[node name="Wall16" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(578, 383)
+rotation = 1.5708
+scale = Vector2(2, 2)
+
+[node name="Wall17" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(507, 433)
+rotation = 1.5708
+scale = Vector2(2, 2)
+
+[node name="Wall18" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(878, 555)
+rotation = 1.5708
+scale = Vector2(2, 2)
+
+[node name="Wall19" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(837, 556)
+rotation = 1.5708
+scale = Vector2(2, 2)
+
+[node name="Wall20" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(959, 582)
+rotation = 1.5708
+scale = Vector2(2, 2)
+
+[node name="Wall21" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(1015, 716)
+rotation = 1.5708
+scale = Vector2(2, 2)
+
+[node name="Wall22" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(963, 773)
+rotation = 1.5708
+scale = Vector2(1.5, 1.5)
+
+[node name="Wall23" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(1151, 739)
+rotation = 1.5708
+scale = Vector2(1.5, 1.5)
+
+[node name="Wall24" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(1308, 776)
+rotation = 1.5708
+scale = Vector2(1.5, 1.5)
+
+[node name="Wall26" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(997, 881)
+rotation = 1.5708
+
+[node name="Wall27" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(997, 942)
+rotation = 1.5708
+
+[node name="Wall28" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(1064, 940)
+rotation = 1.5708
+
+[node name="Wall29" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(1032, 866)
+rotation = 1.5708
+scale = Vector2(0.75, 0.75)
+
+[node name="Wall30" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(542, 596)
+rotation = 1.5708
+scale = Vector2(2, 2)
+
+[node name="Wall31" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(878, 357)
+rotation = 1.5708
+scale = Vector2(2, 2)
+
+[node name="Wall32" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(1167, 413)
+rotation = 1.5708
+scale = Vector2(2, 2)
+
+[node name="Wall33" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(962, 235)
+scale = Vector2(2.2, 2.2)
+
+[node name="Wall34" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(1085, 235)
+scale = Vector2(2.2, 2.2)
+
+[node name="Wall35" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(1167, 343)
+rotation = 1.5708
+scale = Vector2(2, 2)
+
+[node name="Wall36" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(1249, 693)
+scale = Vector2(2.2, 2.2)
+
+[node name="Wall37" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(1218, 854)
+scale = Vector2(2.2, 2.2)
+
+[node name="Wall38" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(1145, 854)
+scale = Vector2(2.2, 2.2)
+
+[node name="Wall39" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(648, 511)
+
+[node name="Wall40" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(570, 511)
+
+[node name="Wall41" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(679, 435)
+
+[node name="Wall42" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(767, 472)
+
+[node name="Wall43" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(609, 475)
+scale = Vector2(0.75, 0.75)
+
+[node name="Wall44" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(640, 446)
+rotation = 1.5708
+scale = Vector2(0.75, 0.75)
+
+[node name="Wall45" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(955, 839)
+scale = Vector2(0.75, 0.75)
+
+[node name="Wall46" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(1079, 774)
+scale = Vector2(0.75, 0.75)
+
+[node name="Wall47" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(1039, 809)
+scale = Vector2(0.25, 0.25)
+
+[node name="Wall48" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(1049, 797)
+rotation = 1.5708
+scale = Vector2(0.25, 0.25)
+
+[node name="Wall49" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(1113, 798)
+rotation = 1.5708
+scale = Vector2(0.25, 0.25)
+
+[node name="Wall50" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(1122, 809)
+scale = Vector2(0.25, 0.25)
+
+[node name="Wall51" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(1031, 984)
+scale = Vector2(0.75, 0.75)
+
+[node name="Wall52" parent="Walls" instance=ExtResource("2_rsjde")]
+position = Vector2(982, 677)
+scale = Vector2(0.25, 0.25)
+
+[node name="Flooring" type="Node2D" parent="."]
+position = Vector2(-2, -2)
+
+[node name="Floor24" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(522, 331)
+rotation = -3.14159
+scale = Vector2(1.12446, 1.12446)
+
+[node name="Floor13" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(416, 274)
+scale = Vector2(0.796659, 1.56184)
+
+[node name="Floor8" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(399, 128)
+rotation = 1.5708
+scale = Vector2(1.25982, 0.899758)
+
+[node name="Floor9" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(419, 252)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor10" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(373.045, 12)
+scale = Vector2(0.644994, 1.48935)
+
+[node name="Floor11" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(399, 44)
+rotation = 1.5708
+scale = Vector2(1.3753, 0.830858)
+
+[node name="Floor12" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(399, 204.947)
+rotation = 1.5708
+scale = Vector2(1.15403, 0.974372)
+
+[node name="Floor7" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(330, 12)
+scale = Vector2(0.704117, 1.3753)
+
+[node name="Floor6" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(284.991, 10)
+scale = Vector2(0.704117, 1.3753)
+
+[node name="Floor5" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(238, 10)
+scale = Vector2(0.768659, 1.26998)
+
+[node name="Floor3" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(138, 9)
+scale = Vector2(0.839117, 1.17273)
+
+[node name="Floor" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(29, 9)
+scale = Vector2(0.916033, 1.08293)
+
+[node name="Floor2" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(85, 9)
+scale = Vector2(0.839117, 1.17273)
+
+[node name="Floor4" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(189, 10)
+scale = Vector2(0.768659, 1.26998)
+
+[node name="Floor14" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(468, 275)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor15" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(468, 255)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor16" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(524, 255)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor17" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(525, 275)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor18" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(419, 296)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor19" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(472, 295)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor20" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(529, 294)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor21" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(419, 315)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor22" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(473, 315)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor23" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(528, 313)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor25" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(550, 375)
+rotation = 1.5708
+scale = Vector2(1.15403, 0.974372)
+
+[node name="Floor26" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(537, 377)
+rotation = 1.5708
+scale = Vector2(1.15403, 0.974372)
+
+[node name="Floor27" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(537, 449)
+rotation = 1.5708
+scale = Vector2(1.15403, 0.974372)
+
+[node name="Floor28" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(550, 448)
+rotation = 1.5708
+scale = Vector2(1.15403, 0.974372)
+
+[node name="Floor29" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(558, 494)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor30" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(613, 494)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor31" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(669, 495)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor32" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(725, 495)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor33" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(782, 495)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor34" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(676, 476)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor35" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(675, 458)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor36" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(783, 515)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor37" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(727, 515)
+rotation = -3.14159
+scale = Vector2(0.892557, 1.24973)
+
+[node name="Floor38" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(748, 546)
+rotation = -3.14159
+scale = Vector2(2, 2.8)
+
+[node name="Floor39" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(749, 589)
+rotation = -3.14159
+scale = Vector2(2, 2.8)
+
+[node name="Floor40" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(621, 547)
+rotation = -3.14159
+scale = Vector2(2, 2.8)
+
+[node name="Floor41" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(621, 591)
+rotation = -3.14159
+scale = Vector2(2, 2.8)
+
+[node name="Floor42" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(751, 633)
+rotation = -3.14159
+scale = Vector2(2, 2.8)
+
+[node name="Floor43" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(623, 634)
+rotation = -3.14159
+scale = Vector2(2, 2.8)
+
+[node name="Floor44" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(753, 677)
+rotation = -3.14159
+scale = Vector2(2, 2.8)
+
+[node name="Floor45" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(625, 678)
+rotation = -3.14159
+scale = Vector2(2, 2.8)
+
+[node name="Floor46" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(877, 678)
+rotation = -3.14159
+scale = Vector2(2, 2.8)
+
+[node name="Floor47" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(964, 692)
+scale = Vector2(0.916033, 1.08293)
+
+[node name="Floor48" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(916, 565)
+rotation = 1.5708
+scale = Vector2(3.154, 2.662)
+
+[node name="Floor49" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(916, 365)
+rotation = 1.5708
+scale = Vector2(3.154, 2.662)
+
+[node name="Floor50" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(957, 365)
+rotation = 1.5708
+scale = Vector2(3.154, 2.662)
+
+[node name="Floor51" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(997, 365)
+rotation = 1.5708
+scale = Vector2(3.154, 2.662)
+
+[node name="Floor52" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(1040, 366)
+rotation = 1.5708
+scale = Vector2(3.154, 2.662)
+
+[node name="Floor53" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(1082, 366)
+rotation = 1.5708
+scale = Vector2(3.154, 2.662)
+
+[node name="Floor54" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(1125, 367)
+rotation = 1.5708
+scale = Vector2(3.154, 2.662)
+
+[node name="Floor55" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(986, 723)
+rotation = 1.5708
+scale = Vector2(1.15403, 0.974372)
+
+[node name="Floor56" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(986, 796)
+rotation = 1.5708
+scale = Vector2(1.15403, 0.974372)
+
+[node name="Floor57" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(1081, 825)
+scale = Vector2(0.916033, 1.08293)
+
+[node name="Floor58" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(1023, 825)
+scale = Vector2(0.916033, 1.08293)
+
+[node name="Floor59" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(1082, 809)
+scale = Vector2(0.916033, 1.08293)
+
+[node name="Floor60" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(1082, 794)
+scale = Vector2(0.916033, 1.08293)
+
+[node name="Floor61" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(1138, 826)
+scale = Vector2(0.916033, 1.08293)
+
+[node name="Floor62" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(1017, 867)
+rotation = 1.5708
+scale = Vector2(1.15403, 0.974372)
+
+[node name="Floor63" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(1017, 940)
+rotation = 1.5708
+scale = Vector2(1.15403, 0.974372)
+
+[node name="Floor64" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(1032, 941)
+rotation = 1.5708
+scale = Vector2(1.15403, 0.974372)
+
+[node name="Floor65" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(1047, 941)
+rotation = 1.5708
+scale = Vector2(1.15403, 0.974372)
+
+[node name="Floor66" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(1230, 815)
+scale = Vector2(2, 2.365)
+
+[node name="Floor67" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(1230, 778)
+scale = Vector2(2, 2.365)
+
+[node name="Floor68" parent="Flooring" instance=ExtResource("2_dlhbi")]
+position = Vector2(1230, 740)
+scale = Vector2(2, 2.365)
+
+[node name="EscapeHatch" parent="." instance=ExtResource("5_ojxg3")]
+position = Vector2(1030, 963)
+
+[node name="BlackHoles" type="Node2D" parent="."]
+
+[node name="Blackhole" parent="BlackHoles" instance=ExtResource("3_gh6sr")]
+position = Vector2(541, 254)
+
+[node name="Blackhole2" parent="BlackHoles" instance=ExtResource("3_gh6sr")]
+position = Vector2(692, 682)
+
+[node name="Blackhole3" parent="BlackHoles" instance=ExtResource("3_gh6sr")]
+position = Vector2(579, 686)
+
+[node name="Blackhole4" parent="BlackHoles" instance=ExtResource("3_gh6sr")]
+position = Vector2(727, 567)
+
+[node name="Blackhole5" parent="BlackHoles" instance=ExtResource("3_gh6sr")]
+position = Vector2(948, 386)
+
+[node name="Blackhole6" parent="BlackHoles" instance=ExtResource("3_gh6sr")]
+position = Vector2(1100, 443)
+
+[node name="Blackhole7" parent="BlackHoles" instance=ExtResource("3_gh6sr")]
+position = Vector2(1092, 307)
+
+[node name="Blackhole8" parent="BlackHoles" instance=ExtResource("3_gh6sr")]
+position = Vector2(1250, 795)
+
+[node name="O2Gens" type="Node2D" parent="."]
+
+[node name="O2Gen" parent="O2Gens" instance=ExtResource("4_clok6")]
+position = Vector2(675, 464)
+
+[node name="O2Gen2" parent="O2Gens" instance=ExtResource("4_clok6")]
+position = Vector2(936, 280)
+
+[node name="O2Gen3" parent="O2Gens" instance=ExtResource("4_clok6")]
+position = Vector2(1081, 797)
+
+[node name="Player" parent="." instance=ExtResource("6_avthb")]
+position = Vector2(16, 7)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
+remote_path = NodePath("../../Camera2D")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(16, 7)
+
+[node name="Wall41" parent="." instance=ExtResource("2_rsjde")]
+position = Vector2(752, 471)
+
+[node name="Wall42" parent="." instance=ExtResource("2_rsjde")]
+position = Vector2(750, 453)

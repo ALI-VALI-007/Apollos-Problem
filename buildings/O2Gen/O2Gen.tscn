@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://cemlas2qnqjoe"]
+
+[ext_resource type="Texture2D" uid="uid://b5ukbpwmi73tn" path="res://buildings/O2Gen/O2Gen.png" id="1_0bxay"]
+[ext_resource type="PackedScene" uid="uid://2hlquvfwmpoc" path="res://entities/Interact.tscn" id="2_pxud7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ppkm4"]
+size = Vector2(32, 31)
+
+[node name="O2Gen" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(0, -1.5)
+scale = Vector2(1, 1.04688)
+texture = ExtResource("1_0bxay")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -3.5)
+shape = SubResource("RectangleShape2D_ppkm4")
+one_way_collision_margin = 0.0
+
+[node name="InteractObj" parent="." instance=ExtResource("2_pxud7")]
+scale = Vector2(2.281, 2)
+interact_val = "15"
+interact_label = "E"
+interact_type = "heal"

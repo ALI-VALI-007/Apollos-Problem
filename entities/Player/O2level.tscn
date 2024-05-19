@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://df72tdct10dn7"]
+
+[ext_resource type="Script" path="res://entities/Player/O2level.gd" id="1_pbpaq"]
+
+[node name="O2Level" type="Control"]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+script = ExtResource("1_pbpaq")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+modulate = Color(1, 0, 0, 1)
+layout_mode = 1
+offset_right = 24.0
+offset_bottom = 4.0
+scale = Vector2(1.3278, 0.905156)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.997131, 0, 0.140614, 1)
+max_value = 250.0
+value = 250.0
+show_percentage = false
